@@ -1,0 +1,17 @@
+*** Estructuras de datos utilizadas en el algoritmo ***
+-La estructura más empleada es el ArrayList, que la he utilizado en todos los casos donde tengo una lista de tamaño indefinido y que el orden es indiferente. En el caso de los productos
+el orden es indiferente hasta el final. Donde se utiliza una función para ordenarlo. Esto es porque realmente así no se está ordenando o manteniendo el orden de los productos y solo se
+ordena cuando están los productos que se van a mostrar. La otra estructura utilizada ha sido el HashSet utilizada para los "Size", elegí principalmente porque en el Size no era tan
+importante poder acceder de forma más rápida a una posición seleccionada, sino que se recorre casi siempre con un "iterator".
+La última estructura utilizada ha sido un HashMap a la hora de leer el stock, ya que el proprio csv tendia a una estructura de clave-valor que no importaba el orden.
+
+
+
+*** Complejidad temporal del algoritmo ***
+
+-En la mayoría del código se mantiene una complejidad de O(n) (lineal) pues son sucesiones de bucles no anidados, pero en la clase "ProductManager" hay un punto donde se anida 2 bucles
+consecutivamente por lo que en este punto la complejidad aumentaría a O(n2) (cuadrático). Por lo que la complejidad final seria O(n2). 
+-Mejorar este nivel de complejidad sería difícil pues los bucles están optimizados, pero se puede llegar a mejorar dicha optimización. La otra opción sería realizar el filtro justo
+cuando se carga los datos en memoria, pero ahí podríamos estamos juntando 2 funcionalidades diferentes que es la carga de datos y la de gestión de datos. En un ejemplo simple como este,
+es viable, pero en un programa más grande y con visión a evolutivos no sería un camino a tomar, pues condenamos a que cualquier nueva gestión de los datos o la introducción de una fuente
+nueva de datos, tener que rehacer todo.

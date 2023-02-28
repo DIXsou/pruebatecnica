@@ -1,0 +1,8 @@
+com\diego\PruebaTecnica\Readers\CsvReader.class
+com\diego\PruebaTecnica\DAO\imp\ProductDaoCsvImp.class
+com\diego\PruebaTecnica\Manager\ProductManager.class
+com\diego\PruebaTecnica\Objects\Product.class
+com\diego\PruebaTecnica\Singleton\Properties.class
+com\diego\PruebaTecnica\App.class
+com\diego\PruebaTecnica\DAO\ProductDAO.class
+com\diego\PruebaTecnica\Objects\Size.class
